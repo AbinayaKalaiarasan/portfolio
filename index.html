@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>My Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* You can add your custom CSS here if needed */
+    </style>
+</head>
+
+<body>
+    <!-- STICKY NAVIGATION BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">Abinaya Kalaiarasan Portfolio</a>
+
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu Items -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certifications">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Smooth Scrolling CSS -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Add top spacing so content doesn’t hide behind fixed navbar */
+        section {
+            scroll-margin-top: 80px;
+        }
+
+        h2 {
+            margin-top: 10px;
+        }
+    </style>
+
+
+    <!-- ===========================
+       ABOUT SECTION
+  ============================ -->
+    <section id="about" class="py-5">
+        <div class="container text-center">
+
+            <!-- Headline -->
+            <h2 class="mb-4 w-100 text-center">About</h2>
+
+            <!-- Profile Image -->
+            <div class="d-flex justify-content-center mb-4">
+                <img src="images/about/profile.jpg Image 2025-12-06 at 21.09.48_4d7232e5.jpg" alt="Profile photo"
+                    class="rounded-circle border img-fluid"
+                    style="width: 500px; height: 500px; object-fit: cover; border-width: 4px !important;">
+            </div>
+
+            <!-- Text Content -->
+            <div class="mx-auto" style="max-width: 1000px;">
+                <p>
+                    Hi, I’m Abinaya Kalaiarasan, an aspiring Data Analyst with strong skills in SQL, Excel, Python,
+                    Power BI, Hadoop, Hive, Spark, and Oracle. I began my career in the banking technology domain as a
+                    Programmer Analyst at Cognizant Technology Solution, where I gained hands-on experience working with
+                    system data, backend processes, and problem-solving across financial applications.
+                <p>
+                <p>My exposure to data-driven workflows and analytical tasks inspired me to pursue advanced studies in
+                    Reporting Systems & Database Development and Big Data Solution Architecture. I am a quick and
+                    continuous learner with strong mathematical and statistical thinking, and I enjoy turning raw data
+                    into meaningful insights that support better decision-making.</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- ===========================
+   Project Section
+  ============================ -->
+
+    <section id="projects" class="py-5">
+        <div class="container text-center">
+
+            <!-- Section Heading -->
+            <h2 class="mb-5 w-100 text-center">Projects</h2>
+
+            <div class="row justify-content-center g-4">
+
+                <!-- Project 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/projects/choco.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Chocolate Company Performance Dashboard</h5>
+                            <!-- Tech Stack -->
+                            <div class="mb-3">
+                                <span class="badge bg-info text-dark">Excel</span>
+                                <span class="badge bg-info text-dark">Power BI</span>
+                                <span class="badge bg-info text-dark">DAX</span>
+                                <span class="badge bg-info text-dark">KPI Reporting</span>
+                            </div>
+                            <p class="card-text">
+                                A Power BI dashboard built to help a fictional chocolate company understand its sales
+                                performance. I cleaned and modeled the dataset, created key KPIs using DAX, and designed
+                                an interactive dashboard with filters and drill-downs. The report highlights
+                                product-level insights, revenue trends, and opportunities for growth.
+                            </p>
+
+                            <a href="https://github.com/AbinayaKalaiarasan/Chocolate_Company"
+                                class="btn btn-primary btn-sm">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/projects/realetl.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Real-Time ETL Pipeline with Kafka & Spark</h5>
+                            <!-- Tech Stack -->
+                            <div class="mb-3">
+                                <span class="badge bg-info text-dark">GCP - Dataproc</span>
+                                <span class="badge bg-info text-dark">Python</span>
+                                <span class="badge bg-info text-dark">Kafka</span>
+                                <span class="badge bg-info text-dark">Spark Streaming</span>
+                                <span class="badge bg-info text-dark">Hive</span>
+                                <span class="badge bg-info text-dark">REST API</span>
+                            </div>
+                            <p class="card-text">
+                                A real-time ETL pipeline that ingests live news data through a REST API, streams it into
+                                Kafka, and processes it with Spark Streaming before storing the output in Hive. This
+                                project demonstrates my ability to work with distributed systems, streaming data, and
+                                big-data technologies to build scalable pipelines.
+                            </p>
+                            <a href="https://github.com/AbinayaKalaiarasan/newsapi-kafka-spark-etl"
+                                class="btn btn-primary btn-sm">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/projects/tab.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Online Sales & COVID-19 Analytics Dashboard</h5>
+                            <!-- Tech Stack -->
+                            <div class="mb-3">
+                                <span class="badge bg-info text-dark">Excel</span>
+                                <span class="badge bg-info text-dark">Tableau</span>
+                                <span class="badge bg-info text-dark">Data Visualization</span>
+                            </div>
+                            <p class="card-text">
+                                A Tableau dashboard analyzing online sales trends alongside COVID-19 case data. I
+                                integrated and cleaned multiple datasets in Excel, then built interactive visuals to
+                                compare demand patterns during pandemic phases. The dashboard reveals shifts in customer
+                                behavior and highlights categories with significant growth.
+                            </p>
+                            <a href="https://github.com/AbinayaKalaiarasan/BIProject"
+                                class="btn btn-primary btn-sm">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/projects/web.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">BTS Web Page</h5>
+                            <!-- Tech Stack -->
+                            <div class="mb-3">
+                                <span class="badge bg-info text-dark">HTML</span>
+                                <span class="badge bg-info text-dark">CSS</span>
+                                <span class="badge bg-info text-dark">JavaSCript</span>
+                                <span class="badge bg-info text-dark">Visual Studio</span>
+                            </div>
+                            <p class="card-text">
+                                Built a responsive website using HTML, CSS, and JavaScript with structured layouts,
+                                navigation menus, multimedia sections, animations, and modern UI/UX design principles.
+                            </p>
+
+
+
+                            <!-- Bright Source Code Button -->
+                            <a href="https://github.com/AbinayaKalaiarasan/BTSWebPage"
+                                class="btn btn-primary btn-sm">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container text-center">
+
+            <!-- Section Heading -->
+            <h2 class="mb-5 w-100 text-center">Skills</h2>
+
+            <div class="row justify-content-center g-4">
+
+                <!-- Skill 1 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm text-center p-3">
+                        <img src="images/skills/dv.jpg" alt="Data Visualization"
+                            class="img-fluid mx-auto mb-3" style="width: 80px; height: 80px; object-fit: contain;">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Data Visualization</h5>
+
+                            <!-- Tool List (Styled Badges) -->
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-2 mb-2">Power BI</span>
+                                <span class="badge bg-primary me-2 mb-2">Tableau</span>
+                                <span class="badge bg-primary me-2 mb-2">Excel Charts</span>
+                                <span class="badge bg-primary me-2 mb-2">Power BI DAX</span>
+                            </div>
+
+                            <p class="card-text">
+                                Tools used to create clear, interactive dashboards that help businesses understand
+                                trends and make decisions. Focuses on translating raw data into meaningful visual
+                                insights through charts, graphs, and reports. </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Skill 2 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm text-center p-3">
+                        <img src="images/skills/cloud.jpg" alt="Cloud and ETL Tools"
+                            class="img-fluid mx-auto mb-3" style="width: 80px; height: 80px; object-fit: contain;">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Cloud & ETL Tools</h5>
+
+                            <!-- Tool List (Styled Badges) -->
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-2 mb-2">AWS (EC2) </span>
+                                <span class="badge bg-primary me-2 mb-2">Azure (Introductry)</span>
+                                <span class="badge bg-primary me-2 mb-2">Talend</span>
+                                <span class="badge bg-primary me-2 mb-2">Spark Streaming</span>
+                                <span class="badge bg-primary me-2 mb-2">Apache Kafka</span>
+                                <span class="badge bg-primary me-2 mb-2">RestAPI</span>
+                            </div>
+
+                            <p class="card-text">
+                                Platforms and services that store, process, and move data between systems. These tools
+                                help automate data pipelines, manage large datasets, and support scalable analytics
+                                solutions.
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill 3 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm text-center p-3">
+                        <img src="images/skills/pl.jpg" alt="Programming Languages"
+                            class="img-fluid mx-auto mb-3" style="width: 80px; height: 80px; object-fit: contain;">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Programming Language</h5>
+
+                            <!-- Tool List (Styled Badges) -->
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-2 mb-2">SQL</span>
+                                <span class="badge bg-primary me-2 mb-2">Python</span>
+                                <span class="badge bg-primary me-2 mb-2">R</span>
+                                <span class="badge bg-primary me-2 mb-2">Mathlab</span>
+                                <span class="badge bg-primary me-2 mb-2">HTML</span>
+                                <span class="badge bg-primary me-2 mb-2">CSS</span>
+                                <span class="badge bg-primary me-2 mb-2">SAS</span>
+                                <span class="badge bg-primary me-2 mb-2">C++</span>
+                                <span class="badge bg-primary me-2 mb-2">Java</span>
+                            </div>
+
+                            <p class="card-text">
+                                Languages used to clean, analyze, and manipulate data efficiently. They support
+                                automation, statistical analysis, machine learning tasks, and integration with
+                                dashboards or databases.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill 4 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm text-center p-3">
+                        <img src="images/skills/sql.jpg" alt="SQL Tools"
+                            class="img-fluid mx-auto mb-3" style="width: 80px; height: 80px; object-fit: contain;">
+
+                        <div class="card-body">
+                            <h5 class="card-title">SQL Tools</h5>
+
+                            <!-- Tool List (Styled Badges) -->
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-2 mb-2">MySQL</span>
+                                <span class="badge bg-primary me-2 mb-2">PostgreSQL</span>
+                                <span class="badge bg-primary me-2 mb-2">SQL Server</span>
+                                <span class="badge bg-primary me-2 mb-2">Oracle</span>
+                                <span class="badge bg-primary me-2 mb-2">SSAS</span>
+                            </div>
+
+                            <p class="card-text">
+                                Databases and querying environments used to extract, filter, and transform data. SQL
+                                tools form the foundation for retrieving structured data and building business insights.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill 5 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm text-center p-3">
+                        <img src="images/skills/ss.jpg" alt="Soft Skills"
+                            class="img-fluid mx-auto mb-3" style="width: 80px; height: 80px; object-fit: contain;">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Soft Skills</h5>
+
+                            <!-- Tool List (Styled Badges) -->
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-2 mb-2">Analytical Mindset</span>
+                                <span class="badge bg-primary me-2 mb-2">keen Problem-Solving</span>
+                                <span class="badge bg-primary me-2 mb-2">Strong in Mathematics & Statistics</span>
+                                <span class="badge bg-primary me-2 mb-2">Quantative knowledge</span>
+                                <span class="badge bg-primary me-2 mb-2">Good Communication</span>
+                                <span class="badge bg-primary me-2 mb-2">Time Management</span>
+                            </div>
+
+                            <p class="card-text">
+                                Essential interpersonal and analytical abilities that support communication, teamwork,
+                                problem-solving, and clear presentation of data findings to technical and non-technical
+                                audiences.
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+    </section>
+
+    <!-- Certificat Section -->
+    <section id="certifications" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Certifications</h2>
+
+            
+            <div class="mb-4">
+                <h5>Excel Essential Training</h5>
+                <span class="badge bg-dark me-2 mb-2">Microsoft</span>
+                <span class="badge bg-dark me-2 mb-2">LinkedIn</span>
+            </div>
+
+            <div class="mb-4">
+                <h5>Introduction to Data Analytics for Buisness</h5>
+                <span class="badge bg-dark me-2 mb-2">Coursera</span>
+            </div>
+
+            <div class="mb-4">
+                <h5>The Python Bible</h5>
+                <span class="badge bg-dark me-2 mb-2">Udemy</span>
+            </div>
+            
+            <div class="mb-4">
+                <h5>Introduction to Machine Learning with Python</h5>
+                <span class="badge bg-dark me-2 mb-2">Coursera</span>
+            </div>
+
+            <div class="mb-4">
+                <h5>Relational Database Design</h5>
+                <span class="badge bg-dark me-2 mb-2">Udemy</span>
+            </div>
+
+            <div class="mb-4">
+                <h5>Microsoft Azure Fundamentals (AZ-900)</h5>
+                <span class="badge bg-dark me-2 mb-2">Microsoft</span>
+            </div>
+
+            <div class="mb-4">
+                <h5>Temenos Technical Training</h5>
+                <span class="badge bg-dark me-2 mb-2">T24/TAP Environment</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact" class="py-5" style="background-color: #111; color: white;">
+        <div class="container text-center">
+
+            <!-- Heading -->
+            <h2 class="mb-5 w-100 text-center">Contact Me</h2>
+
+            <!-- Contact Info -->
+            <div class="row justify-content-center mb-4">
+
+                <!-- Email -->
+                <div class="col-12 col-md-4 d-flex justify-content-center align-items-center mb-3 mb-md-0">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png" alt="Email Icon" class="me-2"
+                        style="width: 28px; height: 28px;">
+                    <span>abi.kalaiarasan@gmail.com</span>
+                </div>
+
+                <!-- Phone -->
+                <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" alt="Phone Icon" class="me-2"
+                        style="width: 28px; height: 28px;">
+                    <span>+1 (548) 577-3892</span>
+                </div>
+
+            </div>
+
+            <!-- Social Icons -->
+            <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/abinaya-kalaiarasan/" target="_blank" data-bs-toggle="tooltip"
+                    title="LinkedIn" class="d-flex justify-content-center align-items-center rounded-circle"
+                    style="width: 60px; height: 60px; background-color: #ff4fa3;">
+                    <img src="icons/InBug-White.png" alt="LinkedIn"
+                        style="width: 30px; height: 30px; object-fit: contain;">
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/AbinayaKalaiarasan" target="_blank" data-bs-toggle="tooltip" title="GitHub"
+                    class="d-flex justify-content-center align-items-center rounded-circle"
+                    style="width: 60px; height: 60px; background-color: #ff4fa3;">
+                    <img src="icons/git.png" alt="GitHub" style="width: 30px; height: 30px; object-fit: contain;">
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Bootstrap Tooltip Activation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        });
+    </script>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>
